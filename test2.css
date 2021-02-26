@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Roboto&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333;
+    height: 100vh;
+    width: auto;
+}
+
+.container {
+    position: absolute;
+    height: 80%;
+    width: 65%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cards {
+    height: 90%;
+    width: 30%;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-radius: 5px;
+}
+
+    .cards:hover {
+        height: 100%;
+        width: 35%;
+        transition: 1s ease-in;
+        border-radius: 15px;
+        box-shadow: 0 25px 45px 15px rgb(55, 0, 55);
+    }
+
+        .cardsHeader {
+            position: relative;
+            height: auto;
+        }
+
+            .title {
+                position: absolute;
+                display: block;
+                top: -7vh;
+                width: 100%;
+            }
+
+            .title > h1 {
+                font-family: 'Fugaz One', cursive;
+                font-size: 2.5rem;
+                font-style: italic;
+                background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,222,69,1) 60%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke: 1px purple;
+                text-align: center;
+            }
+            .cardsHeader > h2 {
+                font-family: 'Fugaz One', cursive;
+                font-size: 1.5rem;
+                font-weight: 400;
+                color: rgb(55, 0, 55);
+                text-align: center;
+                padding-top: 1vh;
+            }
+
+        .cardsImage {
+            height: 45%;
+            -webkit-animation: changeImage 6s infinite;
+            background-size: cover;
+            background-position: center; 
+        }
+
+            @-webkit-keyframes changeImage
+                {
+                0%   {background-image: url("/images/mugCss1.webp"); opacity: 0.2;}
+                10%   {background-image: url("/images/mugCss1.webp"); opacity: 0.4;}
+                20%   {background-image: url("/images/mugCss1.webp"); opacity: 0.8;}
+                30%   {background-image: url("/images/mugCss1.webp"); opacity: 1;}
+                
+                40%  {background-image: url("/images/mugCss2.webp"); opacity: 1;}
+                50%  {background-image: url("/images/mugCss2.webp"); opacity: 1;}
+                60%  {background-image: url("/images/mugCss2.webp"); opacity: 1;}
+                
+                70%  {background-image: url("/images/mugCss3.webp"); opacity: 1;}
+                80%  {background-image: url("/images/mugCss3.webp"); opacity: 0.8;}
+                90%  {background-image: url("/images/mugCss3.webp"); opacity: 0.4;}
+                100%  {background-image: url("/images/mugCss3.webp"); opacity: 0.2;}
+                }
+
+        .separator {
+            border-top: 1px solid purple;
+            margin: 5px;
+        }  
+        
+        .price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .euro {
+            font-family: 'Fugaz One', cursive;
+            font-size: 2.5rem;
+            font-style: normal;
+            background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,222,69,1) 60%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px purple;
+        }
+        .cents {
+            font-family: 'Fugaz One', cursive;
+            font-size: 1.25rem;
+            font-style: italic;
+            background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,222,69,1) 60%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px purple;
+        }
+
+        .body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            font-family: 'Fugaz One', cursive;
+            font-weight: 400;
+            line-height: 1.3rem;
+            color: rgb(55, 0, 55);
+        }
+
+        .body ul {
+            list-style: none;
+        }
+        
+        .cardsFooter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button {
+            border: 1px solid purple;
+            border-radius: 5px;
+            height: auto;
+            margin: 5px;
+            width: 70%;
+            font-family: 'Fugaz One', cursive;
+            font-size: 1.8rem;
+            background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,222,69,1) 60%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke: 1px purple;
+        }
+
+        .button:hover {
+            color: rgb(56, 20, 56);
+            background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,222,69,1) 60%);
+            -webkit-background-clip: content-box;
+            -webkit-text-fill-color: rgba(65, 0, 65, 0.85);
+            /* font-style: italic; */
+        }
