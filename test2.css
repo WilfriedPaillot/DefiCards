@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #333;
+    background-color: rgb(77, 72, 72);
     height: 100vh;
     width: 100vw;
 }
@@ -38,6 +38,7 @@ body {
     flex-direction: column;
     text-align: left;
     border-radius: 5px;
+    margin-top: 10vh;
 }
 
     .cards:hover {
@@ -51,7 +52,6 @@ body {
         .cardsHeader {
             position: relative;
             height: auto;
-            background-color: lightgreen;
         }
 
             .title {
@@ -59,7 +59,7 @@ body {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                top: -7vh;
+                top: -100%; /* -7vh -> -100% pour responsive */
                 width: 100%;
             }
 
@@ -117,7 +117,6 @@ body {
             justify-content: center;
             align-items: center;
             padding: 5px;
-            background-color: lightpink;
         }
 
         .euro {
@@ -149,7 +148,6 @@ body {
             font-weight: 400;
             line-height: 1.3rem;
             color: rgb(55, 0, 55);
-            background-color: #333;
         }
 
         .body ul {
@@ -160,7 +158,6 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: lightslategrey;
         }
 
         .button {
