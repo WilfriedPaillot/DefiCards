@@ -10,13 +10,15 @@
 body {
     background-color: #333;
     height: 100vh;
-    width: auto;
+    width: 100vw;
 }
 
 .container {
     position: absolute;
-    height: 80%;
-    width: 65%;
+    /* height: 90vh;
+    min-width: 100%; */
+    width: 100%;
+    min-height: 100vh;
     left: 0;
     right: 0;
     top: 0;
@@ -25,11 +27,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .cards {
-    height: 90%;
-    width: 30%;
+    height: 435px;
+    min-width: 260px;
     background-color: rgba(255, 255, 255, 1);
     display: flex;
     flex-direction: column;
@@ -38,8 +41,8 @@ body {
 }
 
     .cards:hover {
-        height: 100%;
-        width: 35%;
+        height: 500px;
+        min-width: 280px;
         transition: 1s ease-in;
         border-radius: 15px;
         box-shadow: 0 25px 45px 15px rgb(55, 0, 55);
@@ -48,11 +51,14 @@ body {
         .cardsHeader {
             position: relative;
             height: auto;
+            background-color: lightgreen;
         }
 
             .title {
                 position: absolute;
-                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 top: -7vh;
                 width: 100%;
             }
@@ -65,7 +71,8 @@ body {
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
                 -webkit-text-stroke: 1px purple;
-                text-align: center;
+                /* text-align: center; */
+                padding: 0 5px;
             }
             .cardsHeader > h2 {
                 font-family: 'Fugaz One', cursive;
@@ -110,6 +117,7 @@ body {
             justify-content: center;
             align-items: center;
             padding: 5px;
+            background-color: lightpink;
         }
 
         .euro {
@@ -129,6 +137,7 @@ body {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             -webkit-text-stroke: 1px purple;
+            padding: 0 5px;
         }
 
         .body {
@@ -140,6 +149,7 @@ body {
             font-weight: 400;
             line-height: 1.3rem;
             color: rgb(55, 0, 55);
+            background-color: #333;
         }
 
         .body ul {
@@ -150,6 +160,7 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: lightslategrey;
         }
 
         .button {
@@ -171,5 +182,4 @@ body {
             background: -webkit-linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(252,222,69,1) 60%);
             -webkit-background-clip: content-box;
             -webkit-text-fill-color: rgba(65, 0, 65, 0.85);
-            /* font-style: italic; */
         }
